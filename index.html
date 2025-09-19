@@ -1,83 +1,90 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html lang="fr">
 
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Mon CV</title>
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      
-      <h1>Mon CV</h1>
-   
+<head>
+    <meta charset="utf-8">
+    <title>ecoeats</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
     <header>
+        <h1>Bienvenue sur ecoeats</h1>
+        <img src="image/images.jpg" alt="Logo de ecoeats">
 
-   <section id="coordonnees"></section>
-
-    <h2>Borie Marvin</h2>
-    39 ans<br>
-    <br>
-    41 rue des gloriettes<br> 
-    34420 VILLENEUVE LES BEZIERS<br>
-    boriemarvin@gmail.com<br>
-
+        <nav class="navigation">
+            <ul>
+                <li> <a href="A_propos">A propos</a> </li>
+                <li> <a href="Menu">Menu</a> </li>
+                <li> <a href="Comment_ça_marche">Comment ça marche</a> </li>
+                <li> <a href="formulaire_de_contact">formulaire de contact</a> </li>
+                <li> <a href="bas_de_page">bas de page</a> </li>
+            </ul>
+        </nav>
     </header>
+    <section class="A propos">
+        <h2>Qui sommes nous ?</h2>
+        <p>Manger sainement et durablement
+        <p>
+        <p>Découvrez nos plats préparés avec des ingrédients locaux et de saison.</p>
+        <p>Rejoignez notre communauté d'amateurs de cuisine éco-responsable.</p>
+    </section>
+    <section class="Menu">
+        <h2>Notre Menu</h2>
+        <ul>
+        
+        <li><img src="image/salade.jpg" width="50" alt="salade de quinoa"> Salade de quinoa aux légumes grillés - 8€</li>
+        <li><img src="image/bowl.jpg" width="50" alt="Bowl de riz"> Bowl de riz complet, avocat et saumon - 10€</li>
+        <li><img src="image/wrap.jpg" width="50" alt="Wrap végétarien"> Wrap végétarien aux falafels - 7€</li>
+        <li><img src="image/soupes.jpg" width="50" alt="Soupe de légumes"> Salade de légumes de saison - 5€</li>
+        <li><img src="image/jus.jpg" width="50" alt="jus frais pressé"> Jus frais pressé à froid - 4€</li>
+        
+        </ul>
 
-    <section id="competence"></section>
+    </section>
+    <section class="Comment ça marche">
+        <h2>Comment ça marche ?</h2>
 
-    <h3>Compétence</h3>
-    <p>Adaptibilité, travail en equipe</p>
+        <ol>
+            <li>Choisissez vos plats préférés dans notre menu.</li>
+            <li>Passez votre commande en ligne ou par téléphone.</li>
+            <li>Recevez votre repas chez vous ou venez le récupérer en magasin.</li>
+        </ol>
 
-   <section id="formation"></section>
 
-      <h3>Formation</h3>
-      <ul>
-         <li>2023-2024 : Prep full stack - OpenClassrooms</li>
-         <li>2002-2003 : CAP Menuiserie - CFA NANGIS</li>
-      </ul>
-      
-   <section id="experience"></section>
+    </section>
+    <section class="formulaire de contact">
+        <h2>Contactez-nous</h2>
+        <form action="submit" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+    <footer class="bas de page">
+        <p>&copy; 2025 ecoeats. Tous droits réservés.</p>
+        <p>Suivez-nous sur :
+            <a href="https://www.facebook.com/ecoeats">Facebook</a>,
+            <a href="https://www.twitter.com/ecoeats">Twitter</a>,
+            <a href="https://www.instagram.com/ecoeats">Instagram</a>
+        </p>
+    </footer>
 
-      <h3>Expérience</h3>
-      <ul>
-         <li>2024_2025 : Chauffeur livreur - ILS</li>
-         <li>2023-2024 : Trieur postier - LAPOSTE</li>
-         <li>2022-2023 : Chauffeur VTC - UBER</li>
-         <li>2021-2022 : Agent Exploitation - TRANSPORT BIAU</li>
-         <li>2017-2022 : Chauffeur Acoompagnateur - ADIATE</li>
-         <li>2016-2017 : Agent Polyvalent - MAIRIE</li>
-         <li>2012-2016 : Divers mission Interim - INTERIM</li>
-      </ul>
-      
-      <section id="langue"></section>
 
-      <h3>Langue</h3>
-      <ul> 
-         <li>Anglais</li>
-         <li>Français</li>
-      </ul>
-      
-      <section id="centreinteret"></section>
-      
-      <h3>Centre d'intérêt</h3>
-      <p>Sport, lecture, jeux vidéo</p>
 
-      <section id="certificat"></section>
 
-      <h3>Certificats et accréditations</h3>
-      <ul>
-         <li>2023 : Permis B</li>
-         <li>2022 : Permis VTC</li>
-      </ul>
-      
-    
+
+
 </body>
 
 </html>
