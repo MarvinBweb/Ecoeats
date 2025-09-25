@@ -1,90 +1,210 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 
 <head>
     <meta charset="utf-8">
-    <title>ecoeats</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EcoEats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Icons + Materialize -->
+     
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- CSS personnalisé -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
-        <h1>Bienvenue sur ecoeats</h1>
-        <img src="image/images.jpg" alt="Logo de ecoeats">
+        <nav>
+    <div class="nav-wrapper black">
+      <a href="#" class="brand-logo">🌱 Eco Eats</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">À propos</a></li>
+        <li><a href="badges.html">Menu</a></li>
+        <li><a href="collapsible.html">Comment ça marche ?</a></li>
+        <li><a href="mobile.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-        <nav class="navigation">
-            <ul>
-                <li> <a href="A_propos">A propos</a> </li>
-                <li> <a href="Menu">Menu</a> </li>
-                <li> <a href="Comment_ça_marche">Comment ça marche</a> </li>
-                <li> <a href="formulaire_de_contact">formulaire de contact</a> </li>
-                <li> <a href="bas_de_page">bas de page</a> </li>
-            </ul>
-        </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">À propos</a></li>
+    <li><a href="badges.html">Menu</a></li>
+    <li><a href="collapsible.html">Comment ça marche ?</a></li>
+    <li><a href="mobile.html">Contact</a></li>
+  </ul>
+
     </header>
-    <section class="A propos">
-        <h2>Qui sommes nous ?</h2>
-        <p>Manger sainement et durablement
-        <p>
-        <p>Découvrez nos plats préparés avec des ingrédients locaux et de saison.</p>
-        <p>Rejoignez notre communauté d'amateurs de cuisine éco-responsable.</p>
-    </section>
-    <section class="Menu">
-        <h2>Notre Menu</h2>
-        <ul>
-        
-        <li><img src="image/salade.jpg" width="50" alt="salade de quinoa"> Salade de quinoa aux légumes grillés - 8€</li>
-        <li><img src="image/bowl.jpg" width="50" alt="Bowl de riz"> Bowl de riz complet, avocat et saumon - 10€</li>
-        <li><img src="image/wrap.jpg" width="50" alt="Wrap végétarien"> Wrap végétarien aux falafels - 7€</li>
-        <li><img src="image/soupes.jpg" width="50" alt="Soupe de légumes"> Salade de légumes de saison - 5€</li>
-        <li><img src="image/jus.jpg" width="50" alt="jus frais pressé"> Jus frais pressé à froid - 4€</li>
-        
-        </ul>
 
-    </section>
-    <section class="Comment ça marche">
-        <h2>Comment ça marche ?</h2>
+    <!-- MAIN -->
+    <main>
 
-        <ol>
-            <li>Choisissez vos plats préférés dans notre menu.</li>
-            <li>Passez votre commande en ligne ou par téléphone.</li>
-            <li>Recevez votre repas chez vous ou venez le récupérer en magasin.</li>
-        </ol>
+        <!-- Section À propos -->
+        <section id="a-propos" class="section center-align">
+            <div class="container">
+                <h2 class="black-text">Qui sommes-nous ?</h2>
+                <div class="row section">
+
+                    <div class="col s12 m4">
+                        <i class="material-icons large green-text">eco</i>
+                        <p>Manger sainement et durablement.</p>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <i class="material-icons large green-text">restaurant</i>
+                        <p>Des plats préparés avec des ingrédients locaux et de saison.</p>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <i class="material-icons large green-text">group</i>
+                        <p>Rejoignez notre communauté éco-responsable.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Menu -->
+        <section id="menu" class="section grey lighten-4">
+            <div class="container">
+                <h2 class="center-align">Notre Menu</h2>
+                <div class="row">
+
+                    <!-- Plat 1 -->
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="image/salade.jpg" alt="salade de quinoa">
+                                <span class="card-title">Salade de quinoa</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Légumes grillés - 8€</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Plat 2 -->
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="image/bowl.jpg" alt="Bowl de riz">
+                                <span class="card-title">Bowl de riz</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Complet, avocat et saumon - 10€</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Plat 3 -->
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="image/wrap.jpg" alt="Wrap végétarien">
+                                <span class="card-title">Wrap végétarien</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Aux falafels - 7€</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Fonctionnement -->
+        <section id="fonctionnement" class="section center-align black white-text">
+            <div class="container">
+                <h2>Comment ça marche ?</h2>
+                <ol class="left-align ">
+                    <li>Choisissez vos plats préférés.</li>
+                    <li>Passez votre commande en ligne ou par téléphone.</li>
+                    <li>Recevez votre repas chez vous ou venez le récupérer en magasin.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section black">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m8 offset-m2">
+        <div class="card z-depth-3">
+          <div class="card-content">
+            <h2 class="center-align green-text text-darken-1">Contactez-nous</h2>
+            <p class="center-align grey-text text-darken-1">Une question ? Un avis ? Envoyez-nous un message, nous vous répondrons rapidement 🌱</p>
+            
+            <form>
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix green-text">person</i>
+                  <input id="first_name" type="text" class="validate white-text">
+                  <label for="first_name">Prénom</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate white-text">
+                  <label for="last_name">Nom</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix green-text">email</i>
+                  <input id="email" type="email" class="validate white-text">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix green-text">message</i>
+                  <textarea id="message" class="materialize-textarea white-text"></textarea>
+                  <label for="message">Votre message</label>
+                </div>
+              </div>
+
+              <div class="row center-align">
+                <button class="btn-large green darken-2 waves-effect waves-light" type="submit" name="action">
+                  Envoyer
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-    </section>
-    <section class="formulaire de contact">
-        <h2>Contactez-nous</h2>
-        <form action="submit" method="post">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" required></textarea>
-            <br>
-            <input type="submit" value="Envoyer">
-        </form>
-    </section>
-    <footer class="bas de page">
-        <p>&copy; 2025 ecoeats. Tous droits réservés.</p>
-        <p>Suivez-nous sur :
-            <a href="https://www.facebook.com/ecoeats">Facebook</a>,
-            <a href="https://www.twitter.com/ecoeats">Twitter</a>,
-            <a href="https://www.instagram.com/ecoeats">Instagram</a>
-        </p>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer black">
+        <div class="container center-align">
+            <p>&copy; 2025 EcoEats - Tous droits réservés</p>
+            <div class="social-icons">
+                <a href="#"><i class="material-icons white-text">facebook</i></a>
+                <a href="#"><i class="material-icons white-text">photo_camera</i></a>
+                <a href="#"><i class="material-icons white-text">share</i></a>
+            </div>
+        </div>
     </footer>
 
-
-
-
-
-
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
 </body>
 
 </html>
